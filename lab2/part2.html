@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lab 2: Intro to Three.js Part 2</title>
+		<style>
+			body { margin: 0; }
+			canvas { display: block; }
+		</style>
+	</head>
+	<body>
+		<script src="../three.js-master/build/three.js"></script>
+		<script 
+            src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
+		<script>
+            var scene = new THREE.Scene();
+            var camera = new THREE.PerspectiveCamera(75, 
+            window.innerWidth/window.innerHeight, 0.1, 1000);
+            var renderer = new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+            camera.position.z = 200;
+            // Light Sources
+            var light = new THREE.PointLight(0xffffff, 1, 1000);
+            light.position.set(50, 50, 50);
+            scene.add(light);
+            var light2 = new THREE.PointLight(0xff6ec7, 5, 0);
+            light2.position.set(-70, 0, 0);
+            scene.add(light2);
+            var light3 = new THREE.PointLight(0x1b03a3, 5, 0);
+            light3.position.set(200, 0, 0);
+            scene.add(light3);
+            // Model Loader
+            var loader = new THREE.GLTFLoader();
+                // Load 'dog' model
+            loader.load('dog.glb', function (gltf) {
+                scene.add(gltf.scene);    
+                // Moving model
+                gltf.scene.position.x = -70;
+                gltf.scene.rotation.y = -5;
+                gltf.scene.scale.x = 1.3;
+                gltf.scene.scale.y = 1.3;
+                gltf.scene.scale.z = 1.3;
+            }, function (xhr) {
+                console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
+            }, function (error) {
+                console.error(error);
+            });
+                // Load 'cat' model
+            loader.load('cat.glb', function (gltf) {
+                scene.add(gltf.scene);
+                // Moving model
+                gltf.scene.position.x = 50;
+                gltf.scene.position.y = 10;
+                gltf.scene.rotation.y = 5;
+                gltf.scene.scale.x = 1.3;
+                gltf.scene.scale.y = 1.3;
+                gltf.scene.scale.z = 1.3;
+            }, function (xhr) {
+                console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
+            }, function (error) {
+                console.error(error);
+            });
+                // Load 'cup' model left
+            loader.load('cup.glb', function (gltf) {
+                scene.add(gltf.scene);
+                // Moving model
+                gltf.scene.position.x = -10;
+                gltf.scene.position.y = -20;
+                gltf.scene.rotation.y = 9.7;
+                gltf.scene.scale.x = 2.5;
+                gltf.scene.scale.y = 2.5;
+                gltf.scene.scale.z = 2.5;
+            }, function (xhr) {
+                console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
+            }, function (error) {
+                console.error(error);
+            });
+                // Load 'cup' model right
+            loader.load('cup.glb', function (gltf) {
+                scene.add(gltf.scene);
+                // Moving model
+                gltf.scene.position.x = 40;
+                gltf.scene.position.y = -20;
+                gltf.scene.scale.x = 2.5;
+                gltf.scene.scale.y = 2.5;
+                gltf.scene.scale.z = 2.5;
+            }, function (xhr) {
+                console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
+            }, function (error) {
+                console.error(error);
+            });
+
+
+
+            function animate() {
+                requestAnimationFrame(animate);
+                renderer.render(scene, camera);
+            }
+            animate();
+
+
+		</script>
+	</body>
+</html>
