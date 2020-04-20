@@ -15,7 +15,7 @@
 			THREE.Cache.enabled = true;
 			var count = 0;
 			var loader = new THREE.FileLoader();
-			var fshader, vshader;
+			var fshader, vshader, fshader2;
 
 			// setup shaders
 			loader.load('shaders/vertexShader.vert',
@@ -50,29 +50,59 @@
 				function (err) {
 					console.error('An error happened');
 				});
+			loader.load('shaders/fragmentShader2.frag',
+				// onLoad callback
+				function (data) {
+					console.log(data); // output the text to the console
+					fshader2 = data;
+					count += 1;
+					addCoolCube(); // we will write this method
+				},
+				// onProgress callback
+				function (xhr) {
+					console.log((xhr.loaded/xhr.total * 100)+ '% loaded');
+				},
+				// onError callback
+				function (err) {
+					console.error('An error happened');
+				});
 			
 			// addCoolCube()
 			var geometry1, material1, mesh1;
 
 			function addCoolCube() {
-				if(count == 2) {
+				if(count == 3) {
 					let uniforms = {
+						colorD: {type: 'vec3', value: new
+							THREE.Color(0xf533f6)},
+						colorC: {type: 'vec3', value: new
+							THREE.Color(0x15f4ee)},
 						colorB: {type: 'vec3', value: new
 							THREE.Color(0xACB6E5)},
 						colorA: {type: 'vec3', value: new
 							THREE.Color(0x74ebd5)}
 					};
 					geometry1 = new THREE.BoxGeometry(1, 1, 1);
+					geometry4 = new THREE.BoxGeometry(1, 1, 1);
 					material1 =  new THREE.ShaderMaterial({
 						uniforms: uniforms,
 						fragmentShader: fshader,
 						vertexShader: vshader,
 						precision: "mediump"});
+					material4 =  new THREE.ShaderMaterial({
+						uniforms: uniforms,
+						fragmentShader: fshader2,
+						vertexShader: vshader,
+						precision: "lowp"});
 
 				mesh1 = new THREE.Mesh(geometry1, material1);
+				mesh4 = new THREE.Mesh(geometry4, material4);
 				mesh1.position.x = 2;
 				mesh1.position.y = -2;
+				mesh4.position.x = -2;
+				mesh4.position.y = -2;
 				scene.add(mesh1);
+				scene.add(mesh4);
 				}	
 			}
 
@@ -125,6 +155,10 @@
 				if(geometry1) {
 					geometry1.rotateX(0.01);
 					geometry1.rotateY(0.01);
+				}
+				if(geometry4) {
+					geometry4.rotateX(0.01);
+					geometry4.rotateY(0.01);
 				}
 				renderer.render(scene, camera);
 			}
