@@ -2,8 +2,7 @@
 
 <b>Lab 3</b>
 
-[Link to video](https://drive.google.com/file/d/1mI6X_eOP5UXOTJIeI3NRfMBDfFhOcWyP/view?usp=sharing)
-
+[Link to video](https://drive.google.com/file/d/1mI6X_eOP5UXOTJIeI3NRfMBDfFhOcWyP/view?usp=sharing)  
 Top left     : Basic material with wireframe true and color pink  
 Top right    : Normal material  
 Center       : Phong material with green specular highlight  
