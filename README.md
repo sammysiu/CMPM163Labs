@@ -14,6 +14,7 @@ These three were done in the same way, using three.js built in functionality.
 4. Shader loaded texture  
 5. Tiled shader loaded texture  
 These two were loaded using shader files. I solved the tile issue by using the built-in mod function.  
+For some reason, the tiled cube used the texture file from the first shader cube. Not sure how to fix.
 
 <b>Lab 3</b>
 
