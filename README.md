@@ -1,9 +1,9 @@
 # CMPM163Labs
 
-<b>Lab 4</b>
-a. x = u x 7  
-b. y = v x -7 + 7
-c. (2.625,5.25) = gray
+<b>Lab 4</b>  
+a. x = u x 7    
+b. y = v x -7 + 7  
+c. (2.625,5.25) = gray  
 
 [Link to video](https://drive.google.com/file/d/1bo_ADo5jxJRgCFgc9_9M-fvdPf7ahkXf/view?usp=sharing)  
 From left to right:
