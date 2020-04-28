@@ -1,5 +1,10 @@
 # CMPM163Labs
 
+<b>Lab 4</b>
+a. x = u*7  
+b. y = v*-7 + 7
+c. (2.625,5.25) = gray
+
 <b>Lab 3</b>
 
 [Link to video](https://drive.google.com/file/d/1mI6X_eOP5UXOTJIeI3NRfMBDfFhOcWyP/view?usp=sharing)  
