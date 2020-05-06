@@ -10,8 +10,8 @@ In addition, I switched the track system from the default oval track to the exte
 I created my own skybox, and changed the sun model to 80's style using a texture from a free library.  
 Finally, I changed the horizon mountains to a wireframe material, and changed the colors of the trees and hills.  
 
-[Link to video for Part 2a (Particle Universe)](https://drive.google.com/file/d/1WVAzfANfpFkmtTXsbpWw53aB_S5okLJf/view?usp=sharing)
-
+[Link to video for Part 2a (Particle Universe)](https://drive.google.com/file/d/1WVAzfANfpFkmtTXsbpWw53aB_S5okLJf/view?usp=sharing)  
+[Link to video for Part 2b (Particle Explosion)](https://drive.google.com/file/d/15gvVtC_OpPLMY9x_FM7s_b9jzoDUOy64/view?usp=sharing)  
 
 ## <b>Lab 4</b>  
 a. x = u x 7    
