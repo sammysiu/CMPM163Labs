@@ -1,6 +1,6 @@
 # CMPM163Labs
 
-<b>Lab 5</b>  
+## <b>Lab 5</b>  
 
 [Link to video for Part 1 (Unity)](https://drive.google.com/file/d/1MXvV7zigGS_BIwOGz5jNPGfW4-zUYq99/view?usp=sharing)  
 
@@ -8,10 +8,12 @@ For the Unity project, I added a particle system with orange particles to each o
 The smaller particles scale up in size with the speed of the kart, while the larger particles are left behind as a sort of trail.  
 In addition, I switched the track system from the default oval track to the extended track just outside it, and added a ramp.  
 I created my own skybox, and changed the sun model to 80's style using a texture from a free library.  
-Finally, I changed the horizon mountains to a wireframe material, and changed the colors of the trees and hills.
+Finally, I changed the horizon mountains to a wireframe material, and changed the colors of the trees and hills.  
+
+[Link to video for Part 2a (Particle Universe)](https://drive.google.com/file/d/1WVAzfANfpFkmtTXsbpWw53aB_S5okLJf/view?usp=sharing)
 
 
-<b>Lab 4</b>  
+## <b>Lab 4</b>  
 a. x = u x 7    
 b. y = v x -7 + 7  
 c. (2.625,5.25) = gray  
@@ -27,7 +29,7 @@ These three were done in the same way, using three.js built in functionality.
 These two were loaded using shader files. I solved the tile issue by using the built-in mod function.  
 For some reason, the tiled cube used the texture file from the first shader cube. Not sure how to fix.
 
-<b>Lab 3</b>
+## <b>Lab 3</b>
 
 [Link to video](https://drive.google.com/file/d/1mI6X_eOP5UXOTJIeI3NRfMBDfFhOcWyP/view?usp=sharing)  
 Top left     : Basic material with wireframe true and color pink  
@@ -36,7 +38,7 @@ Center       : Phong material with green specular highlight
 Bottom Left  : Shaders interpolating between default colors and z-axis  
 Bottom Right : Shaders interpolating between blue, purple and y-zxis  
 
-<b>Lab 2</b>
+## <b>Lab 2</b>
 
 [Link to video](https://drive.google.com/file/d/1NeADZKp8pNPdYFGvxcBc9fCCv-Py1t9W/view?usp=sharing)
 
