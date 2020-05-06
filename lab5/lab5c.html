@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lab 5c: Create Your Own Particle Adventure</title>
+		<style>
+			body { margin: 0; }
+			canvas { display: block; }
+		</style>
+	</head>
+	<body>
+		<script src="../three.js-master/build/three.js"></script>
+		<script>
+			// setup the scene
+			var scene = new THREE.Scene();
+			var camera = new THREE.PerspectiveCamera(75,
+				window.innerWidth/window.innerHeight, 0.1, 1000);
+			var renderer = new THREE.WebGLRenderer();
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			document.body.appendChild(renderer.domElement);
+			camera.position.z = 60;
+
+			// initialize particle information
+			particles = []
+			const geo = new THREE.Geometry()
+			for(let i=0; i<1000; i++) {
+				var theta = Math.random() * 6 * Math.PI;
+				const particle = {
+					position: new THREE.Vector3(
+						Math.cos(theta) * theta,
+						Math.sin(theta) * theta,
+						0),
+					radius : theta
+				}
+				particles.push(particle);
+				geo.vertices.push(particle.position)
+    		}
+			// Create points material and geometry, then add to scene
+			const mat = new THREE.PointsMaterial({color:0xffffff,size: 0.5});
+			mesh = new THREE.Points(geo,mat);
+			mesh.position.z = -4;
+			scene.add(mesh);
+
+			var t = 0;
+			var w = 0.1;
+			function animate() {
+				if (t >= 628) {
+					t = 0;
+				}
+				particles.forEach(p => {
+					// Formulas taken from https://physics.info/centripetal/
+
+					var velocity = new THREE.Vector3(
+						-p.radius * w * Math.sin(w*t),
+						p.radius * w * Math.cos(w*t),
+						0);
+					var acceleration = new THREE.Vector3(
+						-p.radius * w^2 * Math.cos(w*t), 
+						-p.radius * w^2 * Math.sin(w*t), 
+						0);
+					p.position.add(velocity);
+					// Alternative way to add vector3s
+					/*
+					p.velocity.y += p.acceleration.y;
+					p.position.x += p.velocity.x;
+					//etc...
+					*/
+				});
+				t += 1;
+				mesh.geometry.verticesNeedUpdate = true;
+				requestAnimationFrame(animate);
+				renderer.render(scene, camera);
+			}
+
+			animate();
+		</script>
+	</body>
+</html>
