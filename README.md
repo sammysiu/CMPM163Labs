@@ -1,5 +1,16 @@
 # CMPM163Labs
 
+## <b>Lab 6</b>
+## Part 1 Unity
+Spot Light - Sends light out in a restricted cone from a point in space  
+Directional Light - Blankets light over the scene from a given direction  
+Point Light - Sends light out in all directions from a point in space   
+Area Light - Sends light from a rectangle in one direction  
+
+![](cardboard.png)  
+![](cardboard_material.png)  
+I tried to recreate this cardboard by using a diffuse shader and matching the color.
+
 ## <b>Lab 5</b>  
 
 <b>[Link to video for Part 1 (Unity)](https://drive.google.com/file/d/1MXvV7zigGS_BIwOGz5jNPGfW4-zUYq99/view?usp=sharing)</b>  
