@@ -2,14 +2,24 @@
 
 ## <b>Lab 6</b>
 ## Part 1 Unity
+### Lighting  
 Spot Light - Sends light out in a restricted cone from a point in space  
 Directional Light - Blankets light over the scene from a given direction  
 Point Light - Sends light out in all directions from a point in space   
 Area Light - Sends light from a rectangle in one direction  
+### Materials  
+![](lab6/cardboard.png)  
+![](lab6/cardboard_material.png)  
+I tried to recreate this cardboard by using a diffuse shader and matching the color.  
+![](lab6/metal.png)
+![](lab6/metallic_material.png)  
+I also tried to recreate the metal on my water bottle using the standard shader with metallic options.  
+### Textures   
+For the textured objects, I reused two of the textures from the free library provided to us a few labs ago, as well as their corresponding normal maps. I created materials for them using bumped diffuse shaders, and added the textures to the corresponding fields.
+### Skyboxes
+I reused the skybox I created for the last lab. To make this, I created 6 images, each representing a different side of the skybox, then imported them using Unity's built-in utility.  
+![](lab6/unityscene.png)  
 
-![](cardboard.png)  
-![](cardboard_material.png)  
-I tried to recreate this cardboard by using a diffuse shader and matching the color.
 
 ## <b>Lab 5</b>  
 
