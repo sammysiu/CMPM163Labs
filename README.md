@@ -13,13 +13,16 @@ Area Light - Sends light from a rectangle in one direction
 I tried to recreate this cardboard by using a diffuse shader and matching the color.  
 ![](lab6/metal.png)
 ![](lab6/metallic_material.png)  
-I also tried to recreate the metal on my water bottle using the standard shader with metallic options.  
+I also tried to recreate the metal on my water bottle using the standard shader using metallic alpha, and with the Metallic turned to max and smoothness at half.  
 ### Textures   
-For the textured objects, I reused two of the textures from the free library provided to us a few labs ago, as well as their corresponding normal maps. I created materials for them using bumped diffuse shaders, and added the textures to the corresponding fields.
+For the textured objects, I reused two of the textures from the free library provided to us a few labs ago, as well as their corresponding normal maps. The textures were of a field of rocks and a wooden pattern. I created materials for them using bumped diffuse shaders, and added the textures to the corresponding fields.
 ### Skyboxes
-I reused the skybox I created for the last lab. To make this, I created 6 images, each representing a different side of the skybox, then imported them using Unity's built-in utility.  
+I reused the skybox I created for the last lab, of a starry night. To make this, I created 6 images, each representing a different side of the skybox, then imported them using Unity's built-in utility.  
 ![](lab6/unityscene.png)  
-
+## Part 2 Shadertoy  
+![](lab6/shadertoytexture.png)  
+<b>[My Shadertoy Project](https://www.shadertoy.com/view/wdBBRR)</b>  
+<b>[Cool Project I Found](https://www.shadertoy.com/view/3slcWr)</b>
 
 ## <b>Lab 5</b>  
 
