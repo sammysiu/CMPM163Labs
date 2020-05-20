@@ -1,5 +1,16 @@
 # CMPM163Labs
 
+## <b>Lab 7</b>
+### Part 1 Unity
+<b>[Link to Video](https://drive.google.com/file/d/1_iHcUbSq5CE1RbQoLr14tDBAyegzM0AN/view?usp=sharing)</b>  
+To create my scene, I modified the mesh shader from the tutorial to deform in both x and y directions.  
+Then, I applied this to a plane. To create the water, I used the shader from the second tutorial.  
+I modified it to displace in the x-direction by half the amount of the y-displacement, and applied this to another plane.  
+Finally, I created 5 rudimentary trees with cylinders and spheres and stuck them around my 'mountain'.  
+
+My partner and I did not cooperate on this lab, and they were unreachable at the time of this commit.  
+It's likely that they finished and turned in before I did.
+
 ## <b>Lab 6</b>
 ### Part 1 Unity
 #### Lighting  
@@ -22,7 +33,7 @@ I reused the skybox I created for the last lab, of a starry night. To make this,
 ### Part 2 Shadertoy  
 ![](lab6/shadertoytexture.png)  
 <b>[My Shadertoy Project](https://www.shadertoy.com/view/wdBBRR)</b>  
-<b>[Cool Project I Found](https://www.shadertoy.com/view/3slcWr)</b>
+<b>[Cool Project I Found](https://www.shadertoy.com/view/3slcWr)</b>  
 
 ## <b>Lab 5</b>  
 
