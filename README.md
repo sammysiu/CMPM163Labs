@@ -1,5 +1,16 @@
 # CMPM163Labs
 
+## <b>Lab 8</b>
+### Part 1 Unity
+![](lab8/Unity.png)  
+![](lab8/LakeMeritt.jpg)  
+My city scene was inspired by Oakland and it's lovely lakes.  
+I wanted to reproduce the lakes, alongside the lake-side trees that Oakland is named for.  
+The streets did not turn out how I want to, so there is some clipping alongside the lakes.  
+I used several assets from the Unity store, including prefabs for the trees and materials for the grass and water.  
+
+My partner and I did not cooperate on this lab, and they were offline at the time of this commit (which is late).  
+
 ## <b>Lab 7</b>
 ### Part 1 Unity
 <b>[Link to Video](https://drive.google.com/file/d/1_iHcUbSq5CE1RbQoLr14tDBAyegzM0AN/view?usp=sharing)</b>  
